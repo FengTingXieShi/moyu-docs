@@ -1,4 +1,4 @@
-import { getDocuments } from '../supabase-client.js';
+import { getDocuments } from './supabase-client.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const docsList = document.querySelector('.docs-list');
