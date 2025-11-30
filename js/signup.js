@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const user = await signUp(email, password);
     if (user) {
-      alert('注册成功，请登录');
+      alert('注册成功！请检查您的邮箱完成验证。');
       window.location.href = 'login.html';
     }
   });
