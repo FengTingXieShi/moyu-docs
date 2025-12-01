@@ -55,3 +55,12 @@ export function onAuthStateChange(callback) {
     callback(session);
   });
 }
+
+export async function getDocumentById(id) {
+  const { data, error } = await supabase.from('documents').select('*').eq('id', id).single();
+  if (error) {
+    console.error('获取文档详情失败:', error.message);
+    return null;
+  }
+  return data;
+}
