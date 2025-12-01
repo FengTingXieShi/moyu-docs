@@ -1,4 +1,4 @@
-import { getDocumentById } from '../supabase-client.js';
+import { getDocumentById } from './supabase-client.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const docDetailTitle = document.querySelector('.doc-detail-title');
