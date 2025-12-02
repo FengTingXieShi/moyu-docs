@@ -1,6 +1,0 @@
-[build]
-  command = "echo '无需构建命令'"
-  publish = "."
-
-[context.production]
-  environment = { NODE_ENV = "production" }
