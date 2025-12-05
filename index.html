@@ -12,10 +12,18 @@
     <div class="header-content">
       <h1>摸鱼文库</h1>
       <div class="header-search-box">
-        <input type="text" id="header-search-input" placeholder="搜索文档..." class="header-search-input">
-        <a class="header-search-icon" href="docs/list.html">
-          
-        </a>
+        <form action="docs/list.html" method="get" class="header-search-form">
+          <input 
+            type="text" 
+            id="header-search-input" 
+            name="q" 
+            placeholder="搜索文档..." 
+            class="header-search-input"
+          >
+          <button type="submit" class="header-search-icon">
+            <img src="../lib/icons/search.svg" alt="搜索">
+          </button>
+        </form>
       </div>
     </div>
   </header>
