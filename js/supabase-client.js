@@ -3,7 +3,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 const SUPABASE_URL = 'https://jdsjinygdnztlysiysho.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Impkc2ppbnlnZG56dGx5c2l5c2hvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQyNTM0MzksImV4cCI6MjA3OTgyOTQzOX0.1XdG4nC6wpvUSJ0oRT-XeG_9z4IedmHY98dR_ZJaV4U';
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 export async function getDocuments() {
   const { data, error } = await supabase.from('documents').select('*');
